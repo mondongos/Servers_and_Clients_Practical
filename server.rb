@@ -1,7 +1,7 @@
 require 'socket'
 require_relative 'notes'
 
-server = TCPServer.new '192.168.50.207', 8888
+server = TCPServer.new(2345)
 
 socket = server.accept
 
